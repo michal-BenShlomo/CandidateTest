@@ -1,0 +1,36 @@
+## .NET
+bin/
+obj/
+*.user
+*.suo
+
+## Visual Studio / Rider / VS Code
+.vs/
+.vscode/
+*.userosscache
+*.sln.docstates
+
+## Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+build/
+bld/
+
+## NuGet
+*.nupkg
+*.nuspec
+packages/
+.nuget/
+
+## Test results
+TestResults/
+[Tt]est[Rr]esult*/
+*.trx
+*.coverage
+*.coveragexml
+
+## Misc
+*.log
+*.tmp
