@@ -4,6 +4,9 @@ obj/
 *.user
 *.suo
 
+## Node.js
+node_modules/
+
 ## Visual Studio / Rider / VS Code
 .vs/
 .vscode/
@@ -34,3 +37,6 @@ TestResults/
 ## Misc
 *.log
 *.tmp
+
+## Frontend build output
+frontend/dist/

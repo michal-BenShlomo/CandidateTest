@@ -1,3 +1,5 @@
+using Requests.Domain.Entities;
+
 namespace Requests.Application.Requests;
 
 public sealed class RequestService : IRequestService
@@ -32,5 +34,14 @@ public sealed class RequestService : IRequestService
             x.Status,
             x.RequestType,
             x.CreatedAt)).ToList();
+    }
+
+    public Task<PagedResult<RequestDto>> SearchAsync(
+        SearchRequestBody request,
+        int currentUserId,
+        bool isAdministrator,
+        CancellationToken cancellationToken = default)
+    {
+        return _repository.SearchAsync(request, currentUserId, isAdministrator, cancellationToken);
     }
 }
